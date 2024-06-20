@@ -21,5 +21,10 @@ async def heh(ctx, count_heh = 5):
 async def add(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left + right)
+@bot.command(name='bot')
+async def help(ctx):
+    await ctx.send('если вы напишите - ($hello) - с вами поздаровуется мой бот аналогично работает ($bye), если вы напишите ($flip_coin) бот подкинет монетку, ($smile) сгенерирует смайлик из 10 записаных в код, напишите ($pass) и бот сгенерирует 10 значный пароль, команда ($heh <число>) тогда бот напишет he столько раз сколько указали')
+
+
 
 bot.run("")
